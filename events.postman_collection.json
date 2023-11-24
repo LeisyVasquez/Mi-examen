@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "6d9b1bc1-d3e5-480c-bd02-b6edede6019b",
+		"name": "events",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12668644",
+		"_collection_link": "https://blue-resonance-491564.postman.co/workspace/ces3~378ed81c-0ef1-4822-a779-3fd9eb531596/collection/12668644-6d9b1bc1-d3e5-480c-bd02-b6edede6019b?action=share&source=collection_link&creator=12668644"
+	},
+	"item": [
+		{
+			"name": "Event",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Presentación trabajo final Estadistica\", \r\n    \"description\": \"Presentación de los posters cientificos de los estudiantes del curso de Estadistica Descriptiva y Exploratoria\", \r\n    \"date\": \"2023-11-29 10:00:00\", \r\n    \"location\": \"Universidad Nacional, bloque 14\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/events_war_exploded/event",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"events_war_exploded",
+						"event"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Event",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Holi\", \r\n    \"description\": \"Nuevo\", \r\n    \"date\": \"2023-11-05 05:30:00\", \r\n    \"location\": \"Parque del frente :)\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/events_war_exploded/event",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"events_war_exploded",
+						"event"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Event by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Holi\", \r\n    \"description\": \"Nuevo\", \r\n    \"date\": \"2023-11-05 05:30:00\", \r\n    \"location\": \"Parque del frente :)\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/events_war_exploded/event?eventId=100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"events_war_exploded",
+						"event"
+					],
+					"query": [
+						{
+							"key": "eventId",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Event",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Biblioteca Abierta 24 horas\", \r\n    \"description\": \"Tendremos: Asesorías, tableros, consomé, café y rutas campus\", \r\n    \"date\": \"2023-11-23 06:00:00\", \r\n    \"location\": \"Universidad Nacional, bloque 14\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/events_war_exploded/event?eventId=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"events_war_exploded",
+						"event"
+					],
+					"query": [
+						{
+							"key": "eventId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Event by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Holi\", \r\n    \"description\": \"Nuevo\", \r\n    \"date\": \"2023-11-05 05:30:00\", \r\n    \"location\": \"Parque del frente :)\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/events_war_exploded/event?eventId=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"events_war_exploded",
+						"event"
+					],
+					"query": [
+						{
+							"key": "eventId",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Event attendees",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Holi\", \r\n    \"description\": \"Nuevo\", \r\n    \"date\": \"2023-11-05 05:30:00\", \r\n    \"location\": \"Parque del frente :)\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/events_war_exploded/event-attendees?eventId=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"events_war_exploded",
+						"event-attendees"
+					],
+					"query": [
+						{
+							"key": "eventId",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,4 +1,4 @@
-package co.edu.poli.ces3.eventos.servlet;
+package co.edu.poli.ces3.events.servlet;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;

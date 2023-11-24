@@ -1,4 +1,4 @@
-package co.edu.poli.ces3.eventos;
+package co.edu.poli.ces3.events;
 
 import java.io.*;
 
